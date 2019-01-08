@@ -1,0 +1,61 @@
+.task__modal{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid gold;
+}
+
+.maths__constructor {
+  width: 400px;
+  height: 200px;
+}
+
+.maths__explanation {
+  margin: 0;
+}
+
+.constructor__container {
+  display: flex;
+  align-self: center;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  width: fit-content;
+}
+
+.constructor__item {
+  padding: 5px;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid gold;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.answer__btn {
+  display: inline-block;
+  width: 45%;
+  margin: 0 auto;
+  padding: 10px 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+    
+.answer__btn:hover {
+  filter: saturate(2);
+}

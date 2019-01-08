@@ -1,0 +1,22 @@
+html {
+    height: 100%;
+}
+  
+body {
+    display: flex;
+    height: 100%;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+canvas{
+	align-self: flex-end;
+	margin-bottom: 9vh;
+}
+
+.selected{
+  outline: 2px solid lightblue;
+  outline-offset: 5px;
+}
+

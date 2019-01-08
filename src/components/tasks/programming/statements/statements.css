@@ -1,0 +1,119 @@
+.task__modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid gold;
+  border-radius: 20px;
+}
+  
+.programming__statements {
+  width: 450px;
+  height: 270px;
+}
+  
+.programming__explanation {
+  margin: 0;
+}
+  
+.programming__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.statements__sentence {
+  margin: 10px 0;
+  border-bottom: 1px solid gold;
+}
+
+.statements__answers {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.statements__answers p {
+  margin: 5px 0;
+}
+
+.answer__btn {
+  display: inline-block;
+  width: 45%;
+  margin: 0 auto;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+      
+.answer__btn:hover {
+  filter: saturate(2);
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid gold;
+    border-radius: 100%;
+    background: #fff;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: gold;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

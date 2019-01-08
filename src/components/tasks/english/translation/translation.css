@@ -1,0 +1,65 @@
+.task__modal{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid gold;
+  border-radius: 20px;
+}
+  
+.english__translation {
+  width: 400px;
+  height: 150px;
+}
+  
+.english__explanation {
+  margin: 0;
+}
+  
+.english__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.english__word {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+  
+.translation__input {
+  display: block;
+  width: 200px;
+  margin: 0 15px;
+  border: 1px solid gold;
+  border-radius: 3px;
+  text-align: center;
+}
+  
+.answer__btn {
+  display: inline-block;
+  width: 45%;
+  margin: 0 auto;
+  padding: 10px 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+      
+.answer__btn:hover {
+  filter: saturate(2);
+}
+  

@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fredoka One', cursive;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    align-self: center;
+    position: relative;
+}
+
+.info__block {
+    display: flex;
+    min-height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0  0 30px 2px black;
+}
+
+.header {
+    position: relative;
+    background-image: url("../img/background1.jpg");
+}
+
+.header__nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: right;
+    z-index: 10;
+}
+
+.navigation__list {
+    text-decoration: none;
+}
+
+.navigation__item {
+    display: inline-block;
+}
+
+.navigation__item a {
+    display: inline-block;
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navigation__item a:hover {
+    color: black;
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+.game__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game__name {
+    float: right;
+    font-size: 100px;
+    color: lawngreen;
+    text-shadow: 0 0 30px black;
+}
+
+.game__name span {
+    font-size: 50px;
+    color: rgb(255, 79, 79); 
+}
+
+.img__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.img__marvel:hover {
+    animation: rotate 2s linear;
+}
+
+.play__button {
+    display: inline-block;
+    padding: 30px;
+    margin: 0 5% 15% 5%;  
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #494949;
+    background:  lawngreen;
+    border: 4px solid #494949;
+    border-radius: 20px;
+}
+
+.play__button:hover {
+    color: #ffffff;
+    background: #38d144;
+    border-color: #38d144;
+    transition: all 0.4s ease 0s;
+}
+
+.history {
+    background-image: url("../img/background2.jpg");
+}
+
+.section__title {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: darkslategray;
+}
+
+.block__description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+    box-sizing: border-box;
+    color: darkslategray;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.img__zombie {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.history__description {
+    width: 60%;
+    margin-left: auto;
+}
+
+.block__text {
+    font-size: 22px;
+    text-align: justify;
+}
+
+.gameplay {
+    background-image: url("../img/background3.jpg");
+}
+
+.screenshots {
+    padding: 20px 0;
+    background-image: url("../img/background4.jpg");
+}
+
+.gameplay__description {
+    width: 60%;
+}
+
+.gameplay__wish{
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.screenshots__content {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.screenshots__block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.screenshots__block img {
+    width: 100%; 
+    border-radius: 5px;
+    border: 1px solid gold;
+    cursor: pointer;
+}
+
+.screenshots__block img:hover{
+    transform: scale(1.5, 1.5);
+}
+
+.footer {
+    color: white;
+    background-color: black;
+}
+
+.footer__author {
+    padding: 10px 0;
+}
+
+.footer__author a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.footer__author a:hover {
+    color: rgb(51, 253, 84);
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

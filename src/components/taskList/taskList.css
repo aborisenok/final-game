@@ -1,0 +1,111 @@
+.tasks {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 700px;
+  text-align: center;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  border: 10px solid gold;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.tasks__back {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.tasks__back i {
+  color: gold;
+}
+
+.tasks__back i:hover {
+  color: lightgreen;
+}
+  
+.tasks__header {
+  margin: 0 0 10px 0;
+}
+  
+.tasks__list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+}
+  
+.task__container {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.tasks__item {
+  position: relative;
+  padding: 5px;
+  margin: 5px;
+  flex-grow: 1;
+  text-align: left;
+  border-radius: 5px 20px 5px 5px;
+  border: 2px solid gold;
+  cursor: pointer;
+}
+  
+.tasks__item:hover {
+  border-color: lightgreen;
+  transform: scale(1.05);
+}
+
+.tasks__item:hover .task__damage {
+  border-color: lightgreen;
+}
+  
+.task__type {
+  display: block;
+  font-weight: bold;
+}
+  
+.task__name {
+  font-size: 12px;
+  color: gray;
+}
+
+.task__complexity {
+  display: block;
+  font-size: 10px;
+  color: lightgray;
+  font-weight: bold;
+}
+  
+.task__damage {
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  display: block;
+  height: 40px;
+  width: 44px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 0 20px 0 20px;
+  border: 2px solid gold;
+}
+
+.task__damage_attack {
+  background: #e57349;
+}
+
+.task__damage_healing {
+  background: lightgreen;
+}

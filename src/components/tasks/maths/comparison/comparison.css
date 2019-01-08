@@ -1,0 +1,54 @@
+.task__modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid gold;
+  border-radius: 20px;
+}
+
+.maths__comparison {
+  width: 400px;
+  height: 150px;
+}
+
+.maths__explanation {
+  margin: 0;
+}
+
+.maths__container {
+  display: flex;
+  justify-content: center;
+}
+
+.maths__input {
+  width: 50px;
+  margin: 0 15px;
+  border: 1px solid gold;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.answer__btn {
+  display: inline-block;
+  width: 45%;
+  margin: 0 auto;
+  padding: 10px 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+    
+.answer__btn:hover {
+  filter: saturate(2);
+}

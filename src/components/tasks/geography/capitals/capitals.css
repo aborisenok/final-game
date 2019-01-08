@@ -1,0 +1,57 @@
+.task__modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid gold;
+  border-radius: 20px;
+}
+  
+.geography__capitals {
+  width: 400px;
+  height: 220px;
+}
+  
+.geography__explanation {
+  margin: 0;
+}
+  
+.capitals__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.capitals__city {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gold;
+}
+
+.capitals__answers {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.capitals__item {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.capitals__item:hover {
+  transition-duration: 0.5s;	
+  color: gold;
+  transform: scale(1.5);
+  text-shadow: 2px 2px 2px black;
+}

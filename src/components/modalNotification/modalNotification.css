@@ -1,0 +1,17 @@
+.modal__notification {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 30px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+.modal__message {
+  font-size: 50px;
+  color: gold;
+}

@@ -1,0 +1,45 @@
+.task__modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid gold;
+  border-radius: 20px;
+}
+  
+.english__mistake {
+  width: 400px;
+  height: 150px;
+}
+  
+.english__explanation {
+  margin: 0;
+}
+  
+.mistake__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.english__letter {
+  margin: 10px 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.english__letter:hover {
+  color: gold;
+  transform: scale(1.5);
+  text-shadow: 2px 2px 2px black;
+}
+
+ 
+  
+  
+ 

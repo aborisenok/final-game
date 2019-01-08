@@ -1,0 +1,130 @@
+.task__modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid gold;
+  border-radius: 20px;
+}
+  
+.programming__output {
+  width: 400px;
+  height: 270px;
+}
+  
+.programming__explanation {
+  margin: 0;
+}
+
+.output__question {
+  margin: 15px 0;
+  border-bottom: 1px solid gold;
+  font-size: 18px;
+}
+  
+.output__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.output__answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.programming__output .checkbox__container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.answer__btn {
+  display: inline-block;
+  width: 45%;
+  margin: 0 auto;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+      
+.answer__btn:hover {
+  filter: saturate(2);
+}
+
+.checkbox__container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox__container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkbox__container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox__container input:checked ~ .checkmark {
+  background-color: gold;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox__container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox__container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
